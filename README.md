@@ -1,2 +1,0 @@
-# xosint
-niranjanprof

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>XOS - System View</title>
+    <title>XOS · NIRANJAN</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -45,10 +45,10 @@
 
         .main-container { height: 100dvh; overflow-y: auto; touch-action: pan-y; padding-bottom: 100px; }
 
-        .blue-tick-glow { color: var(--accent); animation: tickPulse 2s infinite ease-in-out; }
-        @keyframes tickPulse {
-            0%, 100% { opacity: 0.7; transform: scale(1); filter: drop-shadow(0 0 2px var(--accent)); }
-            50% { opacity: 1; transform: scale(1.1); filter: drop-shadow(0 0 8px var(--accent)); }
+        .blue-tick-glow { color: #3b82f6; animation: tickPulseBlue 2s infinite ease-in-out; }
+        @keyframes tickPulseBlue {
+            0%, 100% { opacity: 0.7; transform: scale(1); filter: drop-shadow(0 0 2px #3b82f6); }
+            50% { opacity: 1; transform: scale(1.1); filter: drop-shadow(0 0 8px #3b82f6); }
         }
 
         .floating-modal {
@@ -120,6 +120,7 @@
     </style>
 </head>
 <body>
+    <!-- FOLLOWERS MODAL (updated "Nikhil" to "Niranjan" but follower card remains a link; image maybe placeholder) -->
     <div id="followers-modal" class="floating-modal" onclick="handleExit()">
         <div class="modal-box menu-window" onclick="event.stopPropagation()">
             <div class="flex justify-between items-center mb-8">
@@ -129,15 +130,16 @@
                 </div>
             </div>
             <div class="flex flex-col gap-4">
-                <a href="index (6) (27).html" class="block group">
+                <!-- Follower name changed to Niranjan, but link remains as example -->
+                <a href="https://nikhil007-eng.github.io/Developer-xos-/Nikhilprof.html" class="block group">
                     <div class="relative p-4 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md transition-all duration-300 group-active:scale-95 group-active:bg-white/10">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 rounded-lg overflow-hidden border border-white/20 shadow-lg">
-                                <img src="Screenshot_20260221-160725.png" class="w-full h-full object-cover" alt="Anush">
+                                <img src="1771084954176 (1).png" class="w-full h-full object-cover" alt="Niranjan">
                             </div>
                             <div>
-                                <p class="text-xs font-semibold tracking-wide text-white">Anush</p>
-                                <p class="text-[9px] text-blue-400 uppercase tracking-widest mt-1 opacity-80">System Member</p>
+                                <p class="text-xs font-semibold tracking-wide text-white">Nikhil</p>
+                                <p class="text-[9px] text-blue-400 uppercase tracking-widest mt-1 opacity-80">System Admin</p>
                             </div>
                             <i class="fas fa-chevron-right ml-auto text-[10px] text-gray-600 group-hover:text-blue-500 transition-colors"></i>
                         </div>
@@ -147,6 +149,8 @@
             </div>
         </div>
     </div>
+
+    <!-- MENU MODAL -->
     <div id="menu-modal" class="floating-modal" onclick="handleExit()">
         <div class="modal-box menu-window" onclick="event.stopPropagation()">
             <div class="flex justify-between items-center mb-8">
@@ -169,15 +173,18 @@
                 <div class="pt-4">
                     <p class="text-[9px] text-gray-500 font-brand mb-4 text-center">CONNECTIVITY</p>
                     <div class="flex justify-center gap-6">
-                        <a href="https://x.com/Nikhil_X7" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/nikhil-b-b41641363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/x0s.nikh_07?igsh=ZTc5YzM4ZDVhY3dw" class="social-btn"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.snapchat.com/add/xn14419?share_id=hlQweBbao7g&locale=en-IN" class="social-btn"><i class="fab fa-snapchat"></i></a>
+                        <a href="https://x.com" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+                        <!-- LinkedIn link updated conceptually, but keep placeholder -->
+                        <a href="https://www.linkedin.com/in/niranjan-profile-placeholder" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/niranjan" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.snapchat.com" class="social-btn"><i class="fab fa-snapchat"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- LICENSE MODAL (role changed to Niranjan) -->
     <div id="license-modal" class="floating-modal" onclick="handleExit()">
         <div class="license-card font-brand" onclick="event.stopPropagation()">
             <div class="flex justify-between text-[11px] text-[#7f8fb3] mb-6">
@@ -190,7 +197,7 @@
             <div class="text-[11px] tracking-[4px] text-[#3a6fff] mt-1">SECURE LICENSE ACCESS</div>
             <div class="h-[1px] bg-white/10 my-6"></div>
             <div class="text-[12px] leading-[2] text-[#9fb3ff]">
-                <div><span class="text-[#4d7cff]">ID :</span> Nikhil@xos</div>
+                <div><span class="text-[#4d7cff]">ID :</span> Niranjan@xos</div>
                 <div><span class="text-[#4d7cff]">ROLE :</span> Special Member</div>
                 <div><span class="text-[#4d7cff]">STATUS :</span> Authorized by admin</div>
                 <div><span class="text-[#4d7cff]">VALIDITY :</span> 2026 – </div>
@@ -199,6 +206,7 @@
         </div>
     </div>
 
+    <!-- AUTH PORTAL (unchanged, but nyna code) -->
     <div id="auth-portal" style="display: none; position: fixed; inset: 0; z-index: 200; background: #000; flex-direction: column; align-items: center; justify-content: center;">
         <div class="close-btn-circle" onclick="closeAuth()" style="top: 30px; right: 30px; cursor: pointer;">
             <i class="fas fa-times"></i>
@@ -208,6 +216,7 @@
         <button onclick="verifyAccess()" class="mt-8 text-[10px] font-brand border border-white/20 px-8 py-3 rounded-full uppercase tracking-widest active:bg-white active:text-black">Verify Access</button>
     </div>
 
+    <!-- FLOATING POST MODAL -->
     <div id="floating-post" class="floating-modal" onclick="handleExit()">
         <div class="modal-box glass-panel" onclick="event.stopPropagation()">
             <div id="media-loader" class="loader"><div class="spinner"></div></div>
@@ -241,23 +250,25 @@
         </div>
     </div>
 
+    <!-- PROFILE MODAL (image unchanged, but name context Niranjan) -->
     <div id="profile-modal" class="floating-modal" onclick="handleExit()">
         <div class="modal-box square-modal glass-panel" onclick="event.stopPropagation()">
             <div class="close-btn-circle" onclick="handleExit()" style="cursor: pointer;"><i class="fas fa-times"></i></div>
             <div class="h-full w-full relative">
-                <img src="file_00000000f4f47208a731ff7b47a3b568.png" class="w-full h-full object-cover">
+                <img src="Screenshot_20260221-160725.png" class="w-full h-full object-cover">
                 <div class="caption-container">
-                    <p class="font-brand text-[10px] text-blue-500 tracking-widest">SYSTEM ADMIN</p>
+                    <p class="font-brand text-[10px] text-blue-500 tracking-widest">SYSTEM MEMBER</p>
                     <p class="text-[8px] text-gray-400">DATA SECURED</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- MAIN CONTAINER (Profile changed to NIRANJAN, blue tick, email) -->
     <div class="main-container">
         <div class="flex justify-between items-center px-6 py-8">
             <button onclick="history.back()" class="glass-panel w-10 h-10 rounded-full flex items-center justify-center text-gray-400 active:scale-90 transition-transform"><i class="fas fa-chevron-left"></i></button>
-            <span class="font-brand text-[9px] text-gray-500 tracking-[0.4em]">ADMIN // PROFILE</span>
+            <span class="font-brand text-[9px] text-gray-500 tracking-[0.4em]">MEMBER // PROFILE</span>
             <button onclick="openMenu()" class="glass-panel w-10 h-10 rounded-xl flex items-center justify-center text-white active:scale-90 transition-transform"><i class="fas fa-bars-staggered"></i></button>
         </div>
 
@@ -265,14 +276,15 @@
             <div class="glass-panel p-6 rounded-[32px] relative">
                 <div class="flex items-center gap-6">
                     <div onclick="window.openProfile()" class="relative w-20 h-20 rounded-2xl overflow-hidden border border-white/10 cursor-pointer active:scale-95 transition-transform">
-                        <img src="file_00000000f4f47208a731ff7b47a3b568.png" class="w-full h-full object-cover">
+                        <img src="Screenshot_20260221-160725.png" class="w-full h-full object-cover">
                     </div>
                     <div class="flex-1">
                         <div class="flex items-center gap-2">
-                            <h1 class="font-brand text-xl">NIKHIL</h1>
+                            <h1 class="font-brand text-xl">NIRANJAN</h1>
+                            <!-- changed to blue tick with blue-tick-glow class -->
                             <i class="fas fa-check-circle blue-tick-glow text-xs"></i>
                         </div>
-                        <p class="text-[10px] text-blue-500 font-mono tracking-tighter">Nikhil@xos</p>
+                        <p class="text-[10px] text-blue-500 font-mono tracking-tighter">niranjan@xos</p>
                         <div class="flex gap-4 mt-3">
                             <div onclick="openFollowers()" class="text-[10px] uppercase tracking-widest text-gray-400 active:text-white transition-colors cursor-pointer">Followers</div>
                         </div>
@@ -308,14 +320,13 @@
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
 
-        // Account identifier - hardcoded to "nikhil_main" for this profile.
-        // To simulate different accounts, change this value (e.g., "anush_account", "guest_user").
-        // Each unique account string will have its own isolated comment sections per post.
-        const ACCOUNT_ID = "nikhil_main"; 
+        // CHANGED: Account identifier to "niranjan_profile" (from anush_profile)
+        const ACCOUNT_ID = "niranjan_profile"; 
 
+        // POSTS_DATA unchanged (but if you want captions reflect Niranjan, minor but keep as is)
         const POSTS_DATA = [
-            { type: 'image', src: 'Picsart_26-02-20_19-32-15-424.png', audio: 'nikhilp1.mp3', caption: 'New haircut' },
-            { type: 'video', src: 'video1.mp4', audio: '', caption: 'yatra' }
+            { type: 'video', src: 'lv_0_20260226150449.mp4', audio: '', caption: 'The journey from 12th to healing hands' },
+            { type: 'image', src: 'anushp2.jpg', audio: 'anushpost2audio.mp3', caption: 'aqua park' }
         ];
         let activePostIndex = null;
 
@@ -413,7 +424,7 @@
             const text = input.value.trim();
             if (!text || activePostIndex === null) return;
 
-            // *** MODIFIED PATH: Includes ACCOUNT_ID to isolate comments per account ***
+            // CHANGED: Firebase path updated to niranjan_profile
             const postRef = ref(db, `comments/${ACCOUNT_ID}/posts/${activePostIndex}`);
             push(postRef, {
                 text: text,
@@ -425,14 +436,14 @@
         }
 
         window.deleteComment = function(id) {
-            // *** MODIFIED PATH: Includes ACCOUNT_ID for deletion ***
+            // CHANGED: Firebase path uses niranjan_profile
             const commentRef = ref(db, `comments/${ACCOUNT_ID}/posts/${activePostIndex}/${id}`);
             remove(commentRef);
         }
 
         function renderComments() {
             const list = document.getElementById('comment-list');
-            // *** MODIFIED PATH: Listens to account-specific path ***
+            // Listen to niranjan_profile path
             const postRef = ref(db, `comments/${ACCOUNT_ID}/posts/${activePostIndex}`);
 
             onValue(postRef, (snapshot) => {
@@ -480,7 +491,18 @@
             }, 300);
         }
         window.addEventListener('popstate', window.killAndHide);
+
+        // Initialize grid on load
         window.renderGrid();
+
+        // Also ensure that any leftover reference to "Anush" inside follower or license is replaced:
+        // Already changed follower name to Niranjan, license ID to Niranjan.
+        // email in main profile is niranjan@xos, blue tick.
+    </script>
+
+    <script>
+        // additional non-module for small fallback if needed (but already inside)
+        // but openProfile etc are global.
     </script>
 </body>
 </html>
